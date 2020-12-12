@@ -24,16 +24,12 @@
     "clipboardWrite",
     "contextMenus",
     "fileBrowserHandler",
-    "tabs",
+    "tabs"
   ],
   "content_scripts": [
     {
-      "matches": [
-        "https://www.etsy.com/*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
+      "matches": ["https://www.etsy.com/*"],
+      "js": ["src/inject/inject.js"]
     }
   ]
 }
