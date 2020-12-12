@@ -1,3 +1,5 @@
+import Item from '../classes/Item.js';
+
 const getEtsyItem = () => {
   const title = document.querySelector('h1').innerText;
   const id = Number(window.location.href.split('/')[4]);
@@ -10,7 +12,7 @@ const getEtsyItem = () => {
   const description = document.querySelector(
     '#wt-content-toggle-product-details-read-more > p'
   ).innerText;
-  return { title, id, price, description };
+  return new Item({ title, id, price, description });
 };
 
 export default getEtsyItem;
