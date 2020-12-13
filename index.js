@@ -6,8 +6,9 @@ chrome.extension.sendMessage({}, function (response) {
     if (document.readyState === 'complete') {
       clearInterval(readyStateCheckInterval);
       const href = window.location.href.split('/');
-      if (href[2] === "www.etsy.com" && href[3] === 'listing') {
-        buildEtsyUI();
+      if (href[2] === 'www.etsy.com' && href[3] === 'listing') {
+        const { button } = buildEtsyUI();
+        button.onclick = () => console.log(getEtsyItem());
       }
     }
   }, 10);

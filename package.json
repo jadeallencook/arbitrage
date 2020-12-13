@@ -1,8 +1,12 @@
 {
+  "type": "module",
   "name": "arbitrage",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jadeallencook/arbitrage.git"
@@ -14,11 +18,14 @@
     "automation"
   ],
   "author": "@jadeallencook && @claytonlcook",
-  "scripts": {
-    "cypress": "./node_modules/.bin/cypress open"
-  },
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^6.1.0"
+  "bugs": {
+    "url": "https://github.com/jadeallencook/arbitrage/issues"
+  },
+  "homepage": "https://github.com/jadeallencook/arbitrage#readme",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.10.1",
+    "webpack-cli": "^4.2.0"
   }
 }
