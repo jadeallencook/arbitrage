@@ -25,7 +25,7 @@ const getDescription = () =>
     .innerText;
 
 const getEtsyItem = () => {
-  const title = getProductTitle;
+  const title = getProductTitle();
   const id = getProductId();
   const price = getPrice();
   const description = getDescription();
