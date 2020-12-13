@@ -23,7 +23,6 @@
     "clipboardRead",
     "clipboardWrite",
     "contextMenus",
-    "fileBrowserHandler",
     "tabs"
   ],
   "content_scripts": [
