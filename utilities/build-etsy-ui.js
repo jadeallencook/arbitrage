@@ -6,7 +6,7 @@ const buildEtsyUI = () => {
   button.classList.add('wt-btn');
   button.classList.add('wt-btn--filled');
   button.classList.add('wt-width-full');
-  button.innerText = 'Arbitrage';
+  button.innerText = 'Add to Arbitrage';
   button.style.marginTop = '15px';
   container.appendChild(button);
   return { button };
